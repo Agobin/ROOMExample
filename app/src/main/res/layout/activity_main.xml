@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <Button
         android:id="@+id/btnShowToast"
@@ -15,24 +14,44 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="63dp"
-        android:text="Click me to show toast"/>
+        android:text="Click me to show toast" />
 
-    <EditText
-        android:id="@+id/etUserMessage"
-        android:layout_width="match_parent"
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="165dp"
-        android:ems="10"
-        android:hint="Enter a message"/>
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/etUserMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="165dp"
+            android:ems="10"
+            android:hint="Enter a message" />
+
+        <Button
+            android:id="@+id/btnAddHobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSendMsgToNextActivity"
+            android:layout_below="@+id/etUserMessage"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:text="Add Hobby" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Click to move to next activity"/>
+        android:text="Click to move to next activity" />
 
     <Button
         android:id="@+id/btnShareToOtherApps"
@@ -41,7 +60,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="167dp"
-        android:text="Share to other apps"/>
+        android:text="Share to other apps" />
 
     <Button
         android:id="@+id/btnRecyclerViewDemo"
@@ -50,6 +69,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="46dp"
-        android:text="Recycler View Demo"/>
+        android:text="Recycler View Demo" />
+
+
 
 </RelativeLayout>
