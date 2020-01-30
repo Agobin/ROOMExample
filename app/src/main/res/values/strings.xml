@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">MsgShareApp</string>
+    <string name="app_name">English Name</string>
+    <string name="click_me_to_show_toast">Click me to show toast</string>
+    <string name="enter_a_message">Enter a message</string>
+    <string name="add_hobby">Add Hobby</string>
+    <string name="click_to_move_to_next_activity">Click to move to next activity</string>
+    <string name="share_to_other_apps">Share to other apps</string>
+    <string name="recycler_view_demo">Recycler View Demo</string>
 </resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">French Name</string>
+    <string name="click_me_to_show_toast">Cliquez-moi pour montrer des toasts</string>
+    <string name="enter_a_message">Saisissez un message</string>
+    <string name="add_hobby">Ajouter un passe-temps</string>
+    <string name="click_to_move_to_next_activity">Cliquez pour passer à l\'activité suivante</string>
+    <string name="share_to_other_apps">Partager avec d\'autres applications</string>
+    <string name="recycler_view_demo">Recycler Voir la démo</string>
+</resources>
